@@ -1,0 +1,17 @@
+html
+  head
+    title= title
+
+  body
+    h1= heading
+    h3= subtitle
+    a(href='users') Link to json endpoint with full data
+
+    ul
+      each singleUser in postsByUser
+        li= singleUser.name        
+          
+          each singlePost in singleUser.posts
+            ul
+              li= singlePost.title
+        br
