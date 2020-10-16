@@ -1,1 +1,5 @@
-es6-node-express-pug
+```
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+```
