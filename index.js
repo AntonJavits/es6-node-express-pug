@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 app.set('view engine', 'pug')
 
-//const fetch = require('node-fetch')
 const { combineData } = require('./businessLogic/combineData')
 
 app.get('/', async function (req, res) {
