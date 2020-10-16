@@ -5,8 +5,9 @@ async function combineData() {
   let postsByUsers = data.jsonUsers.map( user => ({    
     ...user, posts: data.jsonPosts.filter( post => {
       return post.userId == user.id
+      })
     })
-  }) )
+  )
 
   return postsByUsers
 }
